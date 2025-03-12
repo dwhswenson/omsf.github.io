@@ -371,7 +371,7 @@ section.joinus {
 }
 .gridflex {
   display: grid;
-  grid-template-columns: repeat(3,31%);
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
   column-gap: 3%;
   row-gap: 40px;
 }
@@ -396,6 +396,8 @@ section.joinus {
 .projects .grid-item .pro  {
   align-self: flex-end;
 }
+
+.community .grid-item,
 .projects .grid-item {
   display: flex;
   flex-wrap: wrap;

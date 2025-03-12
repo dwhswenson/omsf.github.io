@@ -51,6 +51,10 @@
     font-style: italic;
     font-weight: 600;
   }
+
+html {
+    font-family: var(--font-texte);
+}
  /* 
   Sligoil by Ariel Martín Pérez. Distributed by velvetyne.fr.
 @font-face {
