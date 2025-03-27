@@ -9,9 +9,11 @@
     <div class="gridflex">
         {{ range .Pages.ByParam "part" }}
         <div class="grid-item">
-            <h2>{{ .Title }}</h2>
-            <p>{{ .Params.intro }} <a href="{{ .RelPermalink }}">
-            <img class="read-more" src="/images/readmore.svg"></a></p>
+            <div> <!-- the above div is flex, so can get h2 & p on same line -->
+                <h2>{{ .Title }}</h2>
+                <p>{{ .Params.intro }} <a href="{{ .RelPermalink }}">
+                <img class="read-more" src="/images/readmore.svg"></a></p>
+            </div>
         </div>
         {{ end }} 
     </div>
